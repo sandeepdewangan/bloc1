@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 
 import '../blocs/bloc.dart';
+import '../blocs/provider.dart';
 
 class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    // Scoped Global Instances Bloc
+    final bloc =  Provider.of(context);
+
     return SafeArea(
       child: Container(
         margin: EdgeInsets.fromLTRB(10,10,10,5),
